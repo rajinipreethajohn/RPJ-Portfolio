@@ -1,0 +1,71 @@
+'use client';
+
+import { motion } from "framer-motion";
+
+export default function About() {
+  return (
+    <main className="max-w-6xl mx-auto">
+
+
+      <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">My name is Rajini Preetha John</h1>
+          <p className="text-lg leading-relaxed">
+            I am a data scientist, machine learning engineer, artist, and culinary enthusiast. My life spans continents — born in India, married to a German, raising our two daughters who’ve grown up in China, and now calling Malaysia home.
+          </p>
+        </div>
+        <img src="/images/RPJ.jpeg" alt="Rajini portrait" className="rounded-md object-cover w-full max-h-[500px]" />
+      </section>
+
+      <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
+        <motion.img
+          src="/images/bicycle-clean.png"
+          alt="Family on bicycles"
+          className="w-full max-w-xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+        />
+        <p className="text-lg leading-relaxed font-mono">
+          We love riding through life together — often quite literally on a bike! These everyday moments with my husband and daughters inspire the heart of my work — balancing tech, mindfulness, and creativity.
+        </p>
+      </section>
+
+      <section className="max-w-6xl mx-auto py-16 px-4">
+        <img src="/images/scenic-placeholder.jpg" alt="Travel or lifestyle image" className="w-full rounded-md shadow-md" />
+      </section>
+
+      <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">Living Between Worlds</h2>
+          <p className="text-lg leading-relaxed">
+            Being at home in many cultures, I find meaning in storytelling, quiet mornings, and observing the little patterns in life and nature. These reflections make their way into my code, designs, and dishes.
+          </p>
+        </div>
+        <img src="/images/lifestyle-illustration.svg" alt="Mindful living icon" className="w-2/3 mx-auto" />
+      </section>
+
+      <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
+        <img src="/images/handmade-symbol.svg" alt="Handcrafted icon" className="w-2/3 mx-auto" />
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">Human-Centered Tech</h2>
+          <p className="text-lg leading-relaxed">
+            I use data science and machine learning not to automate away magic — but to amplify human creativity, wellbeing, and connection. Every project, like every meal I cook or card I paint, carries intention.
+          </p>
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto py-20 px-4 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 max-w-2xl mx-auto">
+          If you're interested in tech, food, collaboration, or a creative exchange — I'd love to hear from you.
+        </h2>
+        <a
+          href="mailto:youremail@example.com"
+          className="inline-block mt-8 px-6 py-3 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition"
+        >
+          Contact Me
+        </a>
+      </section>
+    </main>
+  );
+}
