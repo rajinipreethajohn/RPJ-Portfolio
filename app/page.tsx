@@ -19,7 +19,7 @@ export default function About() {
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
         <motion.img
-          src="/images/bicycle-clean.png"
+          src="/images/bicycle-clean1.png"
           alt="Family on bicycles"
           className="w-full max-w-xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
