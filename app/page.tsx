@@ -38,17 +38,18 @@ export default function About() {
 
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
+        <img
+          src="/images/travel.png"
+          alt="Family travel illustration"
+          className="w-full max-w-md mx-auto float"
+        />
         <div>
           <h2 className="text-2xl font-semibold mb-4">Wandering Together</h2>
           <p className="text-lg leading-relaxed">
             Traveling the world has become second nature for our little family. From bustling cities to quiet corners of nature, each journey adds a layer to our shared story. It keeps our hearts open, our minds curious, and our lives full of unforgettable moments.
           </p>
         </div>
-        <img
-          src="/images/travel.png"
-          alt="Family travel illustration"
-          className="w-full max-w-md mx-auto float"
-        />
+        
       </section>
 
 
@@ -65,14 +66,14 @@ export default function About() {
       </section>
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
-        
+        <img src="/images/tech.png" alt="Handcrafted icon" className="w-2/3 mx-auto float" />
         <div>
           <h2 className="text-2xl font-semibold mb-4">Human-Centered Tech</h2>
           <p className="text-lg leading-relaxed">
             I use data science and machine learning not to automate away magic — but to amplify human creativity, wellbeing, and connection. Every project, like every meal I cook or card I paint, carries intention.
           </p>
         </div>
-        <img src="/images/tech.png" alt="Handcrafted icon" className="w-2/3 mx-auto float" />
+        
       </section>
 
       <section className="max-w-6xl mx-auto py-20 px-4 text-center">
