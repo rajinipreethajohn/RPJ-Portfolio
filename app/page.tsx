@@ -42,7 +42,7 @@ export default function About() {
             Being at home in many cultures, I find meaning in storytelling, quiet mornings, and observing the little patterns in life and nature. These reflections make their way into my code, designs, and dishes.
           </p>
         </div>
-        <img src="/images/lifestyle-illustration.svg" alt="Mindful living icon" className="w-2/3 mx-auto" />
+        <img src="/images/mindful.png" alt="Mindful living icon" className="w-2/3 mx-auto" />
       </section>
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
