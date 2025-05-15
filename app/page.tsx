@@ -31,8 +31,8 @@ export default function About() {
         </p>
       </section>
 
-      <section className="max-w-6xl mx-auto py-16 px-4">
-        <img src="/images/scenic-placeholder.jpg" alt="Travel or lifestyle image" className="w-full rounded-md shadow-md" />
+      <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
+        <img src="/images/travel.png" alt="Travel or lifestyle image" className="w-full max-w-xl mx-auto‚" />
       </section>
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
