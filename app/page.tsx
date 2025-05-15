@@ -54,23 +54,25 @@ export default function About() {
 
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
+        <img src="/images/mindful.png" alt="Mindful living icon" className="w-2/3 mx-auto float" />
         <div>
           <h2 className="text-2xl font-semibold mb-4">Living Between Worlds</h2>
           <p className="text-lg leading-relaxed">
             Being at home in many cultures, I find meaning in storytelling, quiet mornings, and observing the little patterns in life and nature. These reflections make their way into my code, designs, and dishes.
           </p>
         </div>
-        <img src="/images/mindful.png" alt="Mindful living icon" className="w-2/3 mx-auto float" />
+        
       </section>
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
-        <img src="/images/tech.png" alt="Handcrafted icon" className="w-2/3 mx-auto float" />
+        
         <div>
           <h2 className="text-2xl font-semibold mb-4">Human-Centered Tech</h2>
           <p className="text-lg leading-relaxed">
             I use data science and machine learning not to automate away magic — but to amplify human creativity, wellbeing, and connection. Every project, like every meal I cook or card I paint, carries intention.
           </p>
         </div>
+        <img src="/images/tech.png" alt="Handcrafted icon" className="w-2/3 mx-auto float" />
       </section>
 
       <section className="max-w-6xl mx-auto py-20 px-4 text-center">
