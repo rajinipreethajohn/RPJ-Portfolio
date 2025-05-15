@@ -21,7 +21,7 @@ body {
 
 /* Watercolor image as utility class (you can apply bg-watercolor to any section if needed) */
 .bg-watercolor {
-  background-image: url('/images/watercolor1.jpg');
+  background-image: url('/images/watercolor2.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

@@ -19,14 +19,14 @@ export default function About() {
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
         <motion.img
-          src="/images/bicycle-clean1.png"
+          src="/images/bicycle-clean2.png"
           alt="Family on bicycles"
           className="w-full max-w-xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
         />
-        <p className="text-lg leading-relaxed font-mono">
+        <p className="text-lg leading-relaxed">
           We love riding through life together — often quite literally on a bike! These everyday moments with my husband and daughters inspire the heart of my work — balancing tech, mindfulness, and creativity.
         </p>
       </section>
