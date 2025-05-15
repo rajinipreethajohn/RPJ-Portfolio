@@ -21,7 +21,7 @@ export default function About() {
         <motion.img
           src="/images/bicycle-clean2.png"
           alt="Family on bicycles"
-          className="w-full max-w-xl mx-auto"
+          className="w-full max-w-xl mx-auto float"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
@@ -32,8 +32,20 @@ export default function About() {
       </section>
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
-        <img src="/images/travel.png" alt="Travel or lifestyle image" className="w-full max-w-xl mx-auto‚" />
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">Wandering Together</h2>
+          <p className="text-lg leading-relaxed">
+            Traveling the world has become second nature for our little family. From bustling cities to quiet corners of nature, each journey adds a layer to our shared story. It keeps our hearts open, our minds curious, and our lives full of unforgettable moments.
+          </p>
+        </div>
+        <img
+          src="/images/travel.png"
+          alt="Family travel illustration"
+          className="w-full max-w-md mx-auto float"
+        />
       </section>
+
+
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
         <div>
@@ -42,7 +54,7 @@ export default function About() {
             Being at home in many cultures, I find meaning in storytelling, quiet mornings, and observing the little patterns in life and nature. These reflections make their way into my code, designs, and dishes.
           </p>
         </div>
-        <img src="/images/mindful.png" alt="Mindful living icon" className="w-2/3 mx-auto" />
+        <img src="/images/mindful.png" alt="Mindful living icon" className="w-2/3 mx-auto float" />
       </section>
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
