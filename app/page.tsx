@@ -26,10 +26,16 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
         />
-        <p className="text-lg leading-relaxed">
-          We love riding through life together — often quite literally on a bike! These everyday moments with my husband and daughters inspire the heart of my work — balancing tech, mindfulness, and creativity.
-        </p>
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">Riding Through Life</h2>
+          <p className="text-lg leading-relaxed">
+            We love riding through life together — often quite literally on a bike!
+            These everyday moments with my husband and daughters inspire the heart of
+            my work — balancing tech, mindfulness, and creativity.
+          </p>
+        </div>
       </section>
+
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
         <div>
