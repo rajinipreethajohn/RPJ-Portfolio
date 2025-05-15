@@ -64,7 +64,7 @@ export default function About() {
       </section>
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
-        <img src="/images/handmade-symbol.svg" alt="Handcrafted icon" className="w-2/3 mx-auto" />
+        <img src="/images/tech.png" alt="Handcrafted icon" className="w-2/3 mx-auto float" />
         <div>
           <h2 className="text-2xl font-semibold mb-4">Human-Centered Tech</h2>
           <p className="text-lg leading-relaxed">
