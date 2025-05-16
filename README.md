@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌸 Rajini Preetha John's Personal Website
 
-## Getting Started
+A soulful, human-centered personal site and portfolio — built using **Next.js**, **Tailwind CSS**, and **Framer Motion**, deployed on **Netlify**. Includes storytelling, mindful design, tech expression, and a Formspree-powered contact form.
 
-First, run the development server:
+---
+
+## 🌟 Live Demo
+
+🔗 [https://rajinipreethajohn.netlify.app](https://rajinipreethajohn.netlify.app)
+
+---
+
+## 📁 Features
+
+- 🖼 Clean About section with alternating layout (image + text)
+- ✨ Framer Motion animations
+- 🎨 Soft, feminine aesthetic with thoughtful typography
+- 📬 Working contact form (Formspree)
+- ✅ Custom `/thank-you` route on successful form submission
+- 📱 Fully responsive on mobile/tablet/desktop
+
+---
+
+## 🔧 Built With
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Formspree](https://formspree.io/)
+- [Netlify](https://www.netlify.com/)
+
+---
+
+## 📦 Setup & Development
 
 ```bash
+# Clone the repo
+git clone https://github.com/yourusername/your-repo-name.git
+
+# Navigate to the project
+cd your-repo-name
+
+# Install dependencies
+npm install
+
+# Run locally
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🚀 Deployment
+Currently deployed via Netlify using the default main branch.
+All commits to main will trigger a rebuild.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✅ Custom Domain Instructions
+Point your custom domain to Netlify
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Update Formspree redirect URLs:
 
-## Learn More
+Contact form → https://yourdomain.com/thank-you
 
-To learn more about Next.js, take a look at the following resources:
+Test contact form on production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📝 Useful Files
+deployment-todo.md — Post-deployment checklist
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+app/contact/page.tsx — Contact form
 
-## Deploy on Vercel
+app/thank-you/page.tsx — Success confirmation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🧑‍💻 Author
+Rajini Preetha John
+✉️ rajinipreethajohn.ds@gmail.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+☕ Support & Feedback
+If you liked the design or want to collaborate on mindful tech or data science, feel free to reach out 💌

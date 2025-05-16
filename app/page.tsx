@@ -64,7 +64,7 @@ export default function About() {
         <div className="order-2 md:order-1">
           <h2 className="text-2xl font-semibold mb-4">Human-Centered Tech</h2>
           <p className="text-lg leading-relaxed">
-            I use data science and machine learning not to automate away magic — but to amplify human creativity, wellbeing, and connection. Every project, like every meal I cook or card I paint, carries intention.
+            I use data science and machine learning not to automate away magic — but to amplify human creativity, wellbeing, and connection. Every project, like every meal I cook or art I create, carries intention.
           </p>
         </div>
       </section>
