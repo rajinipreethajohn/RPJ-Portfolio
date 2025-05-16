@@ -14,7 +14,7 @@ export default function ContactPage() {
         <input
           type="hidden"
           name="_redirect"
-          value="https://rajinipreethajohn.netlify.app/thank-you"
+          value="https://rajinipreethajohn.netlify.app/"
         />
         <div>
           <label htmlFor="name" className="block mb-1 font-medium">Name</label>
