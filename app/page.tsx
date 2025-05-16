@@ -7,14 +7,20 @@ export default function About() {
     <main className="max-w-6xl mx-auto">
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
-        <div className="order-2 md:order-1">
+        <div className="order-1 md:order-1">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">My name is Rajini Preetha John</h1>
           <p className="text-lg leading-relaxed">
-            I am a data scientist, machine learning engineer, artist, and culinary enthusiast. My life spans continents — born in India, married to a German, raising our two daughters who’ve grown up in China, and now calling Malaysia home.
+            I am a data scientist & machine learning engineer, artist, and culinary enthusiast. My life spans continents — born in India, married to a German, raising our two daughters who’ve grown up in China, and now calling Malaysia home.
           </p>
         </div>
-        <img src="/images/RPJ.jpeg" alt="Rajini portrait" className="rounded-md object-cover w-full max-h-[500px] order-1 md:order-2" />
+        <img
+          src="/images/RPJ.jpeg"
+          alt="Rajini portrait"
+          className="rounded-md object-cover w-full max-h-[500px] order-2 md:order-2"
+        />
       </section>
+
+
 
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
         <motion.img
