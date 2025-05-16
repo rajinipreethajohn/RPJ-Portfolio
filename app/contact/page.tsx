@@ -6,10 +6,16 @@ export default function ContactPage() {
         I’d love to hear from you! Drop a message and I’ll get back to you soon.
       </p>
       <form
-        action="https://formspree.io/f/mwpoyklv?redirect=https://rajinipreethajohn.netlify.app/thank-you"
+        action="https://formspree.io/f/mwpoyklv"
         method="POST"
         className="grid gap-6 text-left"
       >
+        {/* Hidden redirect field */}
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://rajinipreethajohn.netlify.app/thank-you"
+        />
         <div>
           <label htmlFor="name" className="block mb-1 font-medium">Name</label>
           <input
