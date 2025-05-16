@@ -6,7 +6,7 @@ export default function ContactPage() {
         I’d love to hear from you! Drop a message and I’ll get back to you soon.
       </p>
       <form
-        action="https://formspree.io/f/mwpoyklv?redirect=https://rajinipreethajohn.netlify.app/"
+        action="https://formspree.io/f/mwpoyklv?redirect=https://rajinipreethajohn.netlify.app/thank-you"
         method="POST"
         className="grid gap-6 text-left"
       >
