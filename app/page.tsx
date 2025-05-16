@@ -74,12 +74,14 @@ export default function About() {
           If you're interested in tech, food, collaboration, or a creative exchange — I'd love to hear from you.
         </h2>
         <a
-          href="mailto:youremail@example.com"
+          href="/contact"
           className="inline-block mt-8 px-6 py-3 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition"
         >
           Contact Me
         </a>
       </section>
+
+
     </main>
   );
 }
