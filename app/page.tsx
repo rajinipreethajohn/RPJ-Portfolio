@@ -10,7 +10,10 @@ export default function About() {
         <div className="order-1 md:order-1">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">My name is Rajini Preetha John</h1>
           <p className="text-lg leading-relaxed">
-            I am a data scientist & machine learning engineer, artist, and culinary enthusiast. My life spans continents — born in India, married to a German, raising our two daughters who’ve grown up in China, and now calling Malaysia home.
+            I am a data scientist & machine learning engineer, artist, and culinary enthusiast.  
+            My life spans continents — born in India, married to a German, raising our two daughters who’ve grown up in China, and now calling Malaysia home.  
+            <br /><br />
+            I’m a polyglot and an avid reader who enjoys staying fit and cooking wholesome meals. I thrive on curiosity and craft — in both the digital and the domestic — always learning, building, and experimenting.
           </p>
         </div>
         <img

@@ -14,6 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        
         {/* Load Special Elite font from Google Fonts */}
         <link
           href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
