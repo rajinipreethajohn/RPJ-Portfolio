@@ -14,9 +14,11 @@ export default function About() {
           </p>
         </div>
         <img
-          src="/images/RPJ.jpeg"
-          alt="Rajini portrait"
-          className="rounded-md object-cover w-full max-h-[500px] order-2 md:order-2"
+          src="/images/preetha-profile.jpg"
+          alt="Preetha seated in a sculptural chair, barefoot, at home"
+          width={800}
+          height={1430}
+          className="w-full h-auto max-w-[400px] object-contain shadow-lg rounded-xl order-2 md:order-2"
         />
       </section>
 
