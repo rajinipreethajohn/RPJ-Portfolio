@@ -32,7 +32,7 @@ export default function About() {
         <motion.img
           src="/images/bicycle-clean2.png"
           alt="Family on bicycles"
-          className="w-full max-w-xl mx-auto order-1 md:order-1"
+          className="w-full max-w-xl mx-auto order-1 md:order-1 float"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
@@ -53,7 +53,7 @@ export default function About() {
           alt="Family travel illustration"
           width={400}
           height={400}
-          className="w-full max-w-md mx-auto order-1 md:order-2"
+          className="w-full max-w-md mx-auto order-1 md:order-2 float"
         />
         <div className="order-2 md:order-1">
           <h2 className="text-2xl font-semibold mb-4">Wandering Together</h2>
@@ -71,7 +71,7 @@ export default function About() {
           alt="Mindful living icon"
           width={300}
           height={300}
-          className="w-2/3 mx-auto order-1 md:order-1"
+          className="w-2/3 mx-auto order-1 md:order-1 float"
         />
         <div className="order-2 md:order-2">
           <h2 className="text-2xl font-semibold mb-4">Living Between Worlds</h2>
@@ -89,7 +89,7 @@ export default function About() {
           alt="Human-centered tech icon"
           width={300}
           height={300}
-          className="w-2/3 mx-auto order-1 md:order-2"
+          className="w-2/3 mx-auto order-1 md:order-2 float"
         />
         <div className="order-2 md:order-1">
           <h2 className="text-2xl font-semibold mb-4">Human-Centered Tech</h2>
