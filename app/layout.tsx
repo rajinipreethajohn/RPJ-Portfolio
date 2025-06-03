@@ -38,6 +38,7 @@ export default function RootLayout({
             `,
           }}
         />
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="63cPJ2Izcts1+/UV6sQqSg" async></script>
       </head>
       <body className="bg-watercolor font-mono text-gray-800">
       <nav className="bg-white border-b border-gray-300 py-4 px-6 sticky top-0 z-50">

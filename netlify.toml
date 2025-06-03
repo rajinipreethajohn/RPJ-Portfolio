@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://www.rajinipreethajohn.netlify.app/*"
+  to = "https://rajinipreethajohn.netlify.app/:splat"
+  status = 301
+  force = true
