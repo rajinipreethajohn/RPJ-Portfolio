@@ -10,7 +10,7 @@ export default function TechPage() {
           rel="noopener noreferrer"
           className="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all"
         >
-          <h3 className="text-xl font-semibold mb-2">🌿 KL City Guide</h3>
+          <h3 className="text-xl font-semibold mb-2">🌿 KL City Guide: For Expats </h3>
           <p className="text-gray-600">
             A curated web directory for expats in Kuala Lumpur — featuring schools, healthcare, pet services, and more. Built using Next.js and Supabase.
           </p>
@@ -22,7 +22,7 @@ export default function TechPage() {
           rel="noopener noreferrer"
           className="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all"
         >
-          <h3 className="text-xl font-semibold mb-2">🌸 The She Nirvana</h3>
+          <h3 className="text-xl font-semibold mb-2">🌸 The She Nirvana: Women's Weekly Newsletter</h3>
           <p className="text-gray-600">
             A weekly soul-letter exploring women’s well-being — blending energy rituals, affirmations, intention-setting, and emotional resilience.
           </p>
@@ -34,7 +34,7 @@ export default function TechPage() {
           rel="noopener noreferrer"
           className="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all"
         >
-         <h3 className="text-xl font-semibold mb-2">🌌 The Archetype Engine</h3>
+         <h3 className="text-xl font-semibold mb-2">🌌 The Archetype Engine: Tuning Into Your Frequency</h3>
          <p className="text-gray-600">
             A web-based tool that maps 78 ancient archetypes to psychological states — blending symbolic storytelling with interactive design and cognitive science.
          </p>
@@ -46,7 +46,7 @@ export default function TechPage() {
           rel="noopener noreferrer"
           className="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all"
         >
-         <h3 className="text-xl font-semibold mb-2">🎥 NurtureNestTube</h3>
+         <h3 className="text-xl font-semibold mb-2">🎥 NurtureNestTube: AI-Powered Storytelling</h3>
          <p className="text-gray-600">
             An AI-powered YouTube channel exploring emotional intelligence, parenting, and modern mental health — crafted using Eleven Labs narration, visual storytelling, and educational research.
          </p>
