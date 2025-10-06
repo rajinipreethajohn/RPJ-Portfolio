@@ -20,7 +20,7 @@ export default function About() {
           </p>
         </div>
         <Image
-          src="/images/preetha-profile.jpg"
+          src="/images/pree.jpg"
           alt="Preetha seated in a sculptural chair, barefoot, at home"
           width={800}
           height={1430}
