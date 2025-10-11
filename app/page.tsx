@@ -14,7 +14,7 @@ export default function About() {
   };
 
   return (
-    <main className="max-w-6xl mx-auto">
+    <main className="max-w-6xl mx-auto text-gray-700 antialiased">
       {/* INTRO */}
       <section className="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
         <motion.div
@@ -23,10 +23,10 @@ export default function About() {
           animate="visible"
           className="order-1 md:order-1"
         >
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          <h1 className="text-4xl font-bold mb-8 text-gray-900">
             My name is Rajini Preetha John
           </h1>
-          <p className="text-lg leading-relaxed">
+          <p className="text-lg leading-loose">
             I am a data scientist & machine learning engineer, artist, and culinary enthusiast.
             My life spans continents — born in India, married to a German, raising our two daughters who’ve grown up in China, and now calling Malaysia home.
             <br /><br />
@@ -60,7 +60,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-2"
         >
-          <h2 className="text-2xl font-semibold mb-4">Riding Through Life</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900">Riding Through Life</h2>
           <p className="text-lg leading-relaxed">
             We love riding through life together — often quite literally on a bike!
             These everyday moments with my husband and daughters inspire the heart of
@@ -85,7 +85,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-1"
         >
-          <h2 className="text-2xl font-semibold mb-4">Wandering Together</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900">Wandering Together</h2>
           <p className="text-lg leading-relaxed">
             Traveling the world has become second nature for our little family.
             From bustling cities to quiet corners of nature, each journey adds a layer to our shared story.
@@ -110,7 +110,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-2"
         >
-          <h2 className="text-2xl font-semibold mb-4">Living Between Worlds</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900">Living Between Worlds</h2>
           <p className="text-lg leading-relaxed">
             Being at home in many cultures, I find meaning in storytelling, quiet mornings,
             and observing the little patterns in life and nature. These reflections make their
@@ -135,7 +135,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-1"
         >
-          <h2 className="text-2xl font-semibold mb-4">Human-Centered Tech</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900">Human-Centered Tech</h2>
           <p className="text-lg leading-relaxed">
             I use data science and machine learning not to automate away magic —
             but to amplify human creativity, wellbeing, and connection. Every project,

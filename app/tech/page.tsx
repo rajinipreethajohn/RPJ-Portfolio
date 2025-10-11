@@ -13,12 +13,23 @@ export default function TechPage() {
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-16 text-center">
+      {/* Section title */}
+      <motion.h1
+        className="text-4xl font-bold mb-12 text-center"
+        initial={false}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, ease: "easeOut", delay: 1.4 }}
+      >
+        ✨ Projects for the Soul ✨
+      </motion.h1>
+
       {/* Intro text */}
       <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className="text-gray-700 max-w-3xl mx-auto mb-10 leading-loose will-change-[opacity,transform]"
+        className="text-gray-700 max-w-3xl mx-auto mb-20 leading-loose"
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 20 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        viewport={{ once: true }}
       >
         <p>
           I love to code, design, and weave together science and soul — crafting mindful digital
@@ -35,15 +46,7 @@ export default function TechPage() {
         </p>
       </motion.div>
 
-      {/* Section title */}
-      <motion.h1
-        className="text-4xl font-bold mb-12"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, ease: "easeOut", delay: 1.4 }}
-      >
-        ✨ Projects for the Soul ✨
-      </motion.h1>
+      
 
       {/* Animated project cards */}
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
