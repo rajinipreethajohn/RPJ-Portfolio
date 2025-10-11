@@ -15,10 +15,10 @@ export default function TechPage() {
     <main className="max-w-6xl mx-auto px-4 py-16 text-center">
       {/* Intro text */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
-        className="text-gray-700 max-w-3xl mx-auto mb-10 leading-loose"
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="text-gray-700 max-w-3xl mx-auto mb-10 leading-loose will-change-[opacity,transform]"
       >
         <p>
           I love to code, design, and weave together science and soul — crafting mindful digital
