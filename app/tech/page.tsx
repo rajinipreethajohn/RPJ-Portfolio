@@ -1,58 +1,95 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function TechPage() {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i = 1) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.3, duration: 0.8, ease: "easeOut" },
+    }),
+  };
+
   return (
-    <main className="max-w-6xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-12 text-center">✨ Tech Projects ✨</h1>
-      <div className="grid md:grid-cols-3 gap-6">
+    <main className="max-w-6xl mx-auto px-4 py-16 text-center">
+      {/* Intro text */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="text-gray-700 max-w-3xl mx-auto mb-10 leading-loose"
+      >
+        <p>
+          I love to code, design, and weave together science and soul — crafting mindful digital
+          experiences that inspire curiosity, creativity, and calm. Many of these creations emerged
+          from my own journey — from rituals, reflections, and cross-cultural experiences that shaped
+          my path — evolving into projects that nurture awareness, compassion, and collective harmony.
+        </p>
+        <br />
+        <p>
+          My work blends art and logic — from developing in Next.js, Python, and Supabase to crafting
+          interfaces in Tailwind, Figma, and Framer Motion. I’m endlessly fascinated by how design,
+          data, and sound come together — much like music — to create rhythm, emotion, and flow in
+          digital spaces.
+        </p>
+      </motion.div>
 
-        <a
-          href="https://klcityguide.it.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all"
-        >
-          <h3 className="text-xl font-semibold mb-2">🌿 KL City Guide: For Expats </h3>
-          <p className="text-gray-600">
-            A curated web directory for expats in Kuala Lumpur — featuring schools, healthcare, pet services, and more. Built using Next.js and Supabase.
-          </p>
-        </a>
+      {/* Section title */}
+      <motion.h1
+        className="text-4xl font-bold mb-12"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, ease: "easeOut", delay: 1.4 }}
+      >
+        ✨ Projects for the Soul ✨
+      </motion.h1>
 
-        <a
-          href="https://shenirvananewsletter.streamlit.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all"
-        >
-          <h3 className="text-xl font-semibold mb-2">🌸 The She Nirvana: Women's Weekly Newsletter</h3>
-          <p className="text-gray-600">
-            A weekly soul-letter exploring women’s well-being — blending energy rituals, affirmations, intention-setting, and emotional resilience.
-          </p>
-        </a>
-
-        <a
-          href="https://mysticaltarotgarden.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all"
-        >
-         <h3 className="text-xl font-semibold mb-2">🌌 The Archetype Engine: Tuning Into Your Frequency</h3>
-         <p className="text-gray-600">
-            A web-based tool that maps 78 ancient archetypes to psychological states — blending symbolic storytelling with interactive design and cognitive science.
-         </p>
-        </a>
-
-        <a
-          href="https://youtube.com/@NurtureNestTube"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all"
-        >
-         <h3 className="text-xl font-semibold mb-2">🎥 NurtureNestTube: AI-Powered Storytelling</h3>
-         <p className="text-gray-600">
-            An AI-powered YouTube channel exploring emotional intelligence, parenting, and modern mental health — crafted using Eleven Labs narration, visual storytelling, and educational research.
-         </p>
-        </a>
-
-
+      {/* Animated project cards */}
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {[
+          {
+            href: "https://klcityguide.it.com",
+            emoji: "🌇",
+            title: "KL City Guide: For Expats",
+            desc: "A curated web directory for expats in Kuala Lumpur — featuring schools, healthcare, pet services, and more. Built using Next.js and Supabase.",
+          },
+          {
+            href: "https://360harmonyhub.netlify.app/",
+            emoji: "🌿",
+            title: "360 Harmony Hub: Mindful Living Reimagined",
+            desc: "A holistic wellness ecosystem integrating mindfulness, movement, and modern AI — blending yoga, astrology, affirmations, and self-discovery through soulful, data-driven design.",
+          },
+          {
+            href: "https://mysticaltarotgarden.netlify.app",
+            emoji: "🌌",
+            title: "The Archetype Engine: Tuning Into Your Frequency",
+            desc: "A web-based tool mapping 78 ancient archetypes to modern psychological states — blending symbolic storytelling with interactive design and cognitive science.",
+          },
+          {
+            href: "https://youtube.com/@NurtureNestTube",
+            emoji: "🎥",
+            title: "NurtureNestTube: AI-Powered Storytelling",
+            desc: "An AI-powered YouTube channel exploring emotional intelligence, parenting, and modern mental health — crafted with Eleven Labs narration, visual storytelling, and educational research.",
+          },
+        ].map((project, i) => (
+          <motion.a
+            key={project.title}
+            href={project.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block p-6 bg-white rounded-2xl shadow-md hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 ease-in-out"
+            variants={fadeUp}
+            initial="hidden"
+            animate="visible"
+            custom={i + 1}
+          >
+            <h3 className="text-xl font-semibold mb-2">
+              {project.emoji} {project.title}
+            </h3>
+            <p className="text-gray-600">{project.desc}</p>
+          </motion.a>
+        ))}
       </div>
     </main>
   );
