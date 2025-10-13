@@ -55,13 +55,13 @@ export default function TechPage() {
             href: "https://360harmonyhub.netlify.app/",
             emoji: "🌿",
             title: "360 Harmony Hub: Mindful Living Reimagined",
-            desc: "A holistic wellness ecosystem integrating mindfulness, movement, and modern AI — blending yoga, astrology, affirmations, and self-discovery through soulful, data-driven design.",
+            desc: "A holistic wellness ecosystem integrating mindfulness, movement, and modern AI — blending yoga, affirmations, and soulful design with The Yin Yang Newsletter, a weekly guide to balance, beauty, and conscious living.",
           },
           {
             href: "https://klcityguide.it.com",
             emoji: "🌇",
             title: "KL City Guide: For Expats",
-            desc: "A curated web directory for expats in Kuala Lumpur — featuring schools, healthcare, pet services, and more. Built using Next.js and Supabase.",
+            desc: "A curated web directory for expats in Kuala Lumpur — featuring trusted schools, healthcare, pet services, dining, and community hubs to help newcomers feel grounded and at home in the city.",
           },
           {
             href: "https://mysticaltarotgarden.netlify.app",
