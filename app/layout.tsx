@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "./components/Navbar"; // adjust the path if needed
+
 
 export const metadata: Metadata = {
   title: "Rajini Preetha John",
@@ -41,13 +43,7 @@ export default function RootLayout({
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="63cPJ2Izcts1+/UV6sQqSg" async></script>
       </head>
       <body className="bg-watercolor font-mono text-gray-800">
-      <nav className="bg-white border-b border-gray-300 py-4 px-6 sticky top-0 z-50">
-        <ul className="flex space-x-6 justify-center text-lg font-semibold">
-          <li><a href="/" className="hover:text-yellow-600">Home</a></li>
-          <li><a href="/tech" className="hover:text-yellow-600">Projects</a></li>
-          <li><a href="/contact" className="hover:text-yellow-600">Contact</a></li>
-        </ul>
-      </nav>
+        <Navbar />
 
         {children}
       </body>
