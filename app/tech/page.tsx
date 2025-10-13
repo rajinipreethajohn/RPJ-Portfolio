@@ -52,16 +52,16 @@ export default function TechPage() {
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
         {[
           {
-            href: "https://klcityguide.it.com",
-            emoji: "🌇",
-            title: "KL City Guide: For Expats",
-            desc: "A curated web directory for expats in Kuala Lumpur — featuring schools, healthcare, pet services, and more. Built using Next.js and Supabase.",
-          },
-          {
             href: "https://360harmonyhub.netlify.app/",
             emoji: "🌿",
             title: "360 Harmony Hub: Mindful Living Reimagined",
             desc: "A holistic wellness ecosystem integrating mindfulness, movement, and modern AI — blending yoga, astrology, affirmations, and self-discovery through soulful, data-driven design.",
+          },
+          {
+            href: "https://klcityguide.it.com",
+            emoji: "🌇",
+            title: "KL City Guide: For Expats",
+            desc: "A curated web directory for expats in Kuala Lumpur — featuring schools, healthcare, pet services, and more. Built using Next.js and Supabase.",
           },
           {
             href: "https://mysticaltarotgarden.netlify.app",
