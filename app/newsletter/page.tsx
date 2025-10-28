@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 export default function NewsletterPage() {
-  const { data, error } = useSWR("/api/newsletter", fetcher);
+  const { data, error } = useSWR("/api/newsletter", fetcher, {
+    revalidateOnMount: true,
+    revalidateOnFocus: true,
+  });
 
   if (error)
     return (
@@ -15,9 +18,7 @@ export default function NewsletterPage() {
     );
 
   if (!data)
-    return (
-      <main className="text-center py-20 text-gray-600">Loading...</main>
-    );
+    return <main className="text-center py-20 text-gray-600">Loading...</main>;
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-16 text-center">
