@@ -10,6 +10,8 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.10",
+    "dotenv": "^17.2.3",
     "framer-motion": "^12.11.0",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
@@ -24,6 +26,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }

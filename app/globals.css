@@ -43,3 +43,53 @@ body {
   animation: float 4s ease-in-out infinite;
 }
 
+/* 🌿 BlogLetters specific refinements */
+.blogletters-page {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Parchment-style post cards */
+.blogletters-card {
+  background: rgba(253, 250, 245, 0.95);
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogletters-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings and quotes to match your poetic tone */
+.blogletters-title {
+  font-family: 'Special Elite', monospace;
+  letter-spacing: 0.02em;
+}
+
+.blogletters-quote {
+  font-style: italic;
+  border-left: 4px solid #d3b898;
+  color: #7b6a58;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Gentle fade-in animation for each entry */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blogletters-fade {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+
