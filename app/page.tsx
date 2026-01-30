@@ -27,11 +27,16 @@ export default function About() {
             My name is Rajini Preetha John
           </h1>
           <p className="text-lg leading-loose">
-            I am a data scientist & machine learning engineer, artist, and culinary enthusiast.
-            My life spans continents — born in India, married to a German, raising our two daughters who’ve grown up in China, and now calling Malaysia home.
-            <br /><br />
-            I’m a polyglot and an avid reader who enjoys staying fit and cooking wholesome meals.
-            I thrive on curiosity and craft — in both the digital and the domestic — always learning, building, and experimenting.
+            I am a data scientist & machine learning engineer, artist, and
+            culinary enthusiast. My life spans continents — born in India,
+            married to a German, raising our two daughters who’ve grown up in
+            China, and now calling Malaysia home.
+            <br />
+            <br />
+            I’m a polyglot and an avid reader who enjoys staying fit and cooking
+            wholesome meals. I thrive on curiosity and craft — in both the
+            digital and the domestic — always learning, building, and
+            experimenting.
           </p>
         </motion.div>
 
@@ -60,11 +65,13 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-2"
         >
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900">Riding Through Life</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900cd">
+            Riding Through Life
+          </h2>
           <p className="text-lg leading-relaxed">
-            We love riding through life together — often quite literally on a bike!
-            These everyday moments with my husband and daughters inspire the heart of
-            my work — balancing tech, mindfulness, and creativity.
+            We love riding through life together — often quite literally on a
+            bike! These everyday moments with my husband and daughters inspire
+            the heart of my work — balancing tech, mindfulness, and creativity.
           </p>
         </motion.div>
       </section>
@@ -85,11 +92,14 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-1"
         >
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900">Wandering Together</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900cd">
+            Wandering Together
+          </h2>
           <p className="text-lg leading-relaxed">
             Traveling the world has become second nature for our little family.
-            From bustling cities to quiet corners of nature, each journey adds a layer to our shared story.
-            It keeps our hearts open, our minds curious, and our lives full of unforgettable moments.
+            From bustling cities to quiet corners of nature, each journey adds a
+            layer to our shared story. It keeps our hearts open, our minds
+            curious, and our lives full of unforgettable moments.
           </p>
         </motion.div>
       </section>
@@ -110,11 +120,14 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-2"
         >
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900">Living Between Worlds</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900cd">
+            Living Between Worlds
+          </h2>
           <p className="text-lg leading-relaxed">
-            Being at home in many cultures, I find meaning in storytelling, quiet mornings,
-            and observing the little patterns in life and nature. These reflections make their
-            way into my code, designs, and dishes.
+            Being at home in many cultures, I find meaning in storytelling,
+            quiet mornings, and observing the little patterns in life and
+            nature. These reflections make their way into my code, designs, and
+            dishes.
           </p>
         </motion.div>
       </section>
@@ -135,11 +148,13 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-1"
         >
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900">Human-Centered Tech</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900cd">
+            Human-Centered Tech
+          </h2>
           <p className="text-lg leading-relaxed">
             I use data science and machine learning not to automate away magic —
-            but to amplify human creativity, wellbeing, and connection. Every project,
-            like every meal I cook or art I create, carries intention.
+            but to amplify human creativity, wellbeing, and connection. Every
+            project, like every meal I cook or art I create, carries intention.
           </p>
         </motion.div>
       </section>
@@ -153,7 +168,8 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="text-2xl md:text-3xl font-bold text-gray-900 max-w-2xl mx-auto"
         >
-          If you're interested in tech, food, collaboration, or a creative exchange — I'd love to hear from you.
+          If you're interested in tech, food, collaboration, or a creative
+          exchange — I'd love to hear from you.
         </motion.h2>
         <a
           href="/contact"

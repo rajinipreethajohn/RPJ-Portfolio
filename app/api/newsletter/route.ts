@@ -2,9 +2,12 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const res = await fetch("https://360harmonyhub.netlify.app/newsletter", {
+    const base = "https://360harmonyhub.netlify.app";
+
+    const res = await fetch(`${base}/newsletter`, {
       next: { revalidate: 3600 },
     });
+
     const html = await res.text();
 
     // Helper to clean and normalize text
@@ -18,7 +21,9 @@ export async function GET() {
 
     // Extract title, date, and paragraph
     const titleMatch = html.match(/<h1[^>]*>(.*?)<\/h1>/i);
-    const title = titleMatch ? clean(titleMatch[1]) : "The Yin Yang Newsletter.";
+    const title = titleMatch
+      ? clean(titleMatch[1])
+      : "The Yin Yang Newsletter.";
 
     const dateMatch = html.match(/<h2[^>]*>(.*?)<\/h2>/i);
     const date = dateMatch ? clean(dateMatch[1]) : "";
@@ -35,16 +40,31 @@ export async function GET() {
       .replace(/\s+/g, " ")
       .trim();
 
-    const linkMatch = html.match(/<a[^>]*href="([^"]+)"[^>]*>.*?(?:Read|Full Issue).*?<\/a>/i);
-    const link = linkMatch
-      ? (linkMatch[1].startsWith("http")
-          ? linkMatch[1]
-          : `https://360harmonyhub.netlify.app${linkMatch[1]}`)
-      : "https://360harmonyhub.netlify.app/newsletter";
+    // ✅ Robust latest-issue link detection
+    // Adjust/add patterns to match your actual issue URLs on 360.
+    const issueLinkPatterns = [
+      /<a[^>]*href="(\/newsletter\/[^"]+)"[^>]*>/i,
+      /<a[^>]*href="(\/yin[^"]+)"[^>]*>/i,
+      /<a[^>]*href="(\/posts\/[^"]+)"[^>]*>/i,
+      /<a[^>]*href="(\/blog\/[^"]+)"[^>]*>/i,
+    ];
+
+    let link = `${base}/newsletter`; // fallback (landing page)
+
+    for (const re of issueLinkPatterns) {
+      const m = html.match(re);
+      if (m?.[1]) {
+        link = `${base}${m[1]}`;
+        break;
+      }
+    }
 
     return NextResponse.json({ title, date, excerpt, link });
   } catch (error) {
     console.error("Newsletter fetch failed:", error);
-    return NextResponse.json({ error: "Failed to fetch newsletter" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to fetch newsletter" },
+      { status: 500 },
+    );
   }
 }
