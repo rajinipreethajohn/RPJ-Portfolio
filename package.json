@@ -16,6 +16,7 @@
     "lucide-react": "^0.511.0",
     "next": "^15.3.9",
     "next-sitemap": "^4.2.3",
+    "notion-to-html": "^0.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "swr": "^2.3.6"
@@ -25,6 +26,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.3.9",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"

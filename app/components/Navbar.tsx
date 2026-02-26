@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,9 +41,26 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-lg font-semibold">
-          <li><a href="/tech" className="hover:text-yellow-600">Projects</a></li>
-          <li><a href="/newsletter" className="hover:text-yellow-600">Newsletter</a></li>
-          <li><a href="/contact" className="hover:text-yellow-600">Contact</a></li>
+          <li>
+            <Link href="/tech" className="hover:text-yellow-600">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link href="/blogletters" className="hover:text-yellow-600">
+              BlogLetters
+            </Link>
+          </li>
+          <li>
+            <Link href="/newsletter" className="hover:text-yellow-600">
+              Newsletter
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="hover:text-yellow-600">
+              Contact
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -70,17 +88,18 @@ export default function Navbar() {
             <ul className="flex flex-col items-center space-y-4 py-4 text-lg font-semibold">
               {[
                 { name: "Projects", path: "/tech" },
+                { name: "BlogLetters", path: "/blogletters" },
                 { name: "Newsletter", path: "/newsletter" },
                 { name: "Contact", path: "/contact" },
               ].map((link) => (
                 <li key={link.path}>
-                  <a
+                  <Link
                     href={link.path}
                     className="hover:text-yellow-600"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

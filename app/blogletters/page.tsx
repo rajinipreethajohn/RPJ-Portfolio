@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface BlogPost {
   id: string;
@@ -35,7 +36,7 @@ export default function BlogLettersPage() {
     );
 
   // 🌸 2️⃣ Add your “Coming Soon” safeguard HERE
-  if (posts.length < 2) {
+  if (posts.length === 0) {
     return (
       <main className="text-center py-24 text-gray-600">
         BlogLetters will open soon 🌿
@@ -57,51 +58,58 @@ export default function BlogLettersPage() {
 
       <div className="space-y-20">
         {posts.map((post) => (
-          <motion.article
+          <Link
             key={post.id}
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="blogletters-card overflow-hidden blogletters-fade"
+            href={`/blogletters/${post.slug}`}
+            className="block"
           >
-            <img
-              src={post.cover}
-              alt={post.title}
-              className="w-full h-72 object-cover"
-            />
-            <div className="p-8">
-              <h2 className="text-3xl mb-3 blogletters-title">{post.title}</h2>
-              {post.date && (
-                <p className="text-sm text-gray-500 mb-4">
-                  {new Date(post.date).toLocaleDateString("en-US", {
-                    month: "long",
-                    day: "numeric",
-                    year: "numeric",
-                  })}
+            <motion.article
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="blogletters-card overflow-hidden blogletters-fade cursor-pointer hover:opacity-95 transition"
+            >
+              <div className="p-8">
+                <h2 className="text-3xl mb-3 blogletters-title">
+                  {post.title}
+                </h2>
+
+                {post.date && (
+                  <p className="text-sm text-gray-500 mb-4">
+                    {new Date(post.date).toLocaleDateString("en-US", {
+                      month: "long",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
+                  </p>
+                )}
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  {post.excerpt ||
+                    "A new reflection from Letters From My Soul."}
                 </p>
-              )}
-              <p className="text-gray-700 leading-relaxed mb-4">
-                {post.excerpt || "A new reflection from Letters From My Soul."}
-              </p>
-              {post.whisper && (
-                <blockquote className="blogletters-quote">
-                  {post.whisper}
-                </blockquote>
-              )}
-              {post.tags.length > 0 && (
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {post.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-sm px-3 py-1 bg-[#efe6d8] text-[#5a4633] rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </div>
-          </motion.article>
+
+                {post.whisper && (
+                  <blockquote className="blogletters-quote">
+                    {post.whisper}
+                  </blockquote>
+                )}
+
+                {post.tags.length > 0 && (
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {post.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-sm px-3 py-1 bg-[#efe6d8] text-[#5a4633] rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </motion.article>
+          </Link>
         ))}
       </div>
     </main>
