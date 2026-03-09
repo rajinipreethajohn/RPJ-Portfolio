@@ -16,12 +16,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Special Elite', monospace;
+  font-family: "Special Elite", monospace;
 }
 
 /* Watercolor image as utility class (you can apply bg-watercolor to any section if needed) */
 .bg-watercolor {
-  background-image: url('/images/watercolor2.jpg');
+  background-image: url("/images/watercolor2.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -54,7 +54,9 @@ body {
   background: transparent;
   border-radius: 1.5rem;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .blogletters-card:hover {
@@ -64,16 +66,23 @@ body {
 
 /* Headings and quotes to match your poetic tone */
 .blogletters-title {
-  font-family: 'Special Elite', monospace;
+  font-family: "Special Elite", monospace;
   letter-spacing: 0.02em;
 }
 
 .blogletters-quote {
   font-style: italic;
-  border-left: 4px solid #d3b898;
-  color: #7b6a58;
-  padding-left: 1rem;
-  margin-top: 1.5rem;
+  border-left: 3px solid #d3b898;
+  color: #6f5f4d;
+  padding-left: 1.2rem;
+  margin: 2rem 0;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  max-width: 650px;
+}
+
+.blogletters-quote strong {
+  font-size: 1.1rem;
 }
 
 /* Gentle fade-in animation for each entry */
@@ -92,4 +101,24 @@ body {
   animation: fadeInUp 0.8s ease-out both;
 }
 
+/* 🌿 BlogLetters article typography */
+.blogletters-page p {
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
 
+.blogletters-page li {
+  line-height: 1.7;
+  margin-bottom: 0.6rem;
+}
+
+.blogletters-page h2,
+.blogletters-page h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+.blogletters-page p {
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  max-width: 700px;
+}
