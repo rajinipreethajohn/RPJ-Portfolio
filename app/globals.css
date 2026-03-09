@@ -26,6 +26,14 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .bg-watercolor {
+    background-size: contain;
+    background-position: top center;
+    background-attachment: scroll;
+  }
+}
 
 @keyframes float {
   0% {
