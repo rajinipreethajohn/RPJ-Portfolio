@@ -4,6 +4,26 @@ import { Client } from "@notionhq/client";
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 const databaseId = process.env.NOTION_DATABASE_ID!;
 
+async function getAllBlocks(blockId: string) {
+  let allBlocks: any[] = [];
+  let cursor: string | undefined = undefined;
+  let hasMore = true;
+
+  while (hasMore) {
+    const response = await notion.blocks.children.list({
+      block_id: blockId,
+      page_size: 100,
+      start_cursor: cursor,
+    });
+
+    allBlocks = [...allBlocks, ...response.results];
+    hasMore = response.has_more;
+    cursor = response.next_cursor ?? undefined;
+  }
+
+  return allBlocks;
+}
+
 export async function GET(
   req: Request,
   { params }: { params: Promise<{ slug: string }> },
@@ -25,10 +45,7 @@ export async function GET(
       return NextResponse.json({ error: "Post not found" }, { status: 404 });
     }
 
-    const blocksRes = await notion.blocks.children.list({
-      block_id: page.id,
-      page_size: 100,
-    });
+    const blocks = await getAllBlocks(page.id);
 
     const props = page.properties;
 
@@ -44,7 +61,7 @@ export async function GET(
         "https://via.placeholder.com/1200x600?text=Letters+From+My+Soul",
       excerpt: props.Excerpt?.rich_text?.[0]?.plain_text || "",
       whisper: props.Whisper?.rich_text?.[0]?.plain_text || "",
-      blocks: blocksRes.results,
+      blocks,
     });
   } catch (error: any) {
     console.error("❌ Failed to fetch post:", error.message);
