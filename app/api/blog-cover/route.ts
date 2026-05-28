@@ -1,7 +1,24 @@
 import { NextResponse } from "next/server";
-import { Client } from "@notionhq/client";
 
-const notion = new Client({ auth: process.env.NOTION_TOKEN });
+const TRUSTED_IMAGE_HOSTS = new Set([
+  "file.notion.so",
+  "secure.notion-static.com",
+  "prod-files-secure.s3.us-west-2.amazonaws.com",
+  "s3.us-west-2.amazonaws.com",
+]);
+
+function isTrustedImageUrl(url: string) {
+  try {
+    const parsedUrl = new URL(url);
+
+    return (
+      parsedUrl.protocol === "https:" &&
+      TRUSTED_IMAGE_HOSTS.has(parsedUrl.hostname)
+    );
+  } catch {
+    return false;
+  }
+}
 
 export async function GET(request: Request) {
   try {
@@ -12,15 +29,17 @@ export async function GET(request: Request) {
       return NextResponse.json({ error: "Missing cover URL" }, { status: 400 });
     }
 
+    if (!isTrustedImageUrl(coverUrl)) {
+      return NextResponse.json(
+        { error: "Unsupported cover image host" },
+        { status: 400 }
+      );
+    }
+
     console.log("🖼️ Fetching cover image:", coverUrl.substring(0, 100) + "...");
 
-    // Fetch the image from Notion with authentication
+    // Notion file URLs are signed, so this request must not forward NOTION_TOKEN.
     const response = await fetch(coverUrl, {
-      headers: {
-        "Authorization": `Bearer ${process.env.NOTION_TOKEN}`,
-        "Notion-Version": "2022-06-28",
-      },
-      // Notion covers might redirect, follow them
       redirect: "follow",
     });
 
