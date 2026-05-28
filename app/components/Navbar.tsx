@@ -52,6 +52,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link href="/art" className="hover:text-yellow-600">
+              Art
+            </Link>
+          </li>
+          <li>
             <Link href="/newsletter" className="hover:text-yellow-600">
               Newsletter
             </Link>
@@ -89,6 +94,7 @@ export default function Navbar() {
               {[
                 { name: "Projects", path: "/tech" },
                 { name: "BlogLetters", path: "/blogletters" },
+                { name: "Art", path: "/art" },
                 { name: "Newsletter", path: "/newsletter" },
                 { name: "Contact", path: "/contact" },
               ].map((link) => (
