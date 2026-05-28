@@ -25,21 +25,29 @@ const featuredWorks = [
 
 export default function ArtPage() {
   return (
-    <main className="max-w-6xl mx-auto px-4 py-14 text-gray-800">
+    <main className="max-w-6xl mx-auto px-4 py-14 text-gray-700">
       <section className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center">
         <div>
           <p className="uppercase tracking-[0.18em] text-sm text-gray-600 mb-4">
             Stillhaus
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-950 mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Art as a quiet practice of seeing.
           </h1>
-          <p className="text-lg leading-loose max-w-2xl">
-            My art practice lives beside my work in data and technology: slower,
-            tactile, and attentive to feeling. Stillhaus is where I gather
-            paintings, studies, color, memory, and the small visual moments that
-            keep asking to be noticed.
-          </p>
+          <div className="max-w-2xl space-y-4 text-lg leading-relaxed">
+            <p>
+              My art lives at the intersection of intuition and technology.
+            </p>
+            <p>
+              Some pieces begin with a color. Others with silence, a dream, a
+              conversation, a place, or a feeling I cannot fully explain.
+            </p>
+            <p>
+              AI and digital tools are simply extensions of the creative
+              process. The real inspiration comes from being deeply present in
+              ordinary moments.
+            </p>
+          </div>
 
           <div className="mt-8 flex justify-center md:justify-start">
             <a
@@ -68,7 +76,7 @@ export default function ArtPage() {
       <section className="py-16">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
           <div>
-            <h2 className="text-3xl font-bold text-gray-950">
+            <h2 className="text-3xl font-bold text-gray-900">
               Selected Glimpses
             </h2>
             <p className="mt-3 text-gray-700 max-w-2xl leading-relaxed">
@@ -102,7 +110,7 @@ export default function ArtPage() {
                 />
               </div>
               <div className="p-5">
-                <h3 className="text-xl font-semibold text-gray-950">
+                <h3 className="text-xl font-semibold text-gray-900">
                   {work.title}
                 </h3>
                 <p className="mt-2 text-sm uppercase tracking-[0.16em] text-gray-500">

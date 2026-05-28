@@ -65,7 +65,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-2"
         >
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900cd">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900">
             Riding Through Life
           </h2>
           <p className="text-lg leading-relaxed">
@@ -92,7 +92,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-1"
         >
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900cd">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900">
             Wandering Together
           </h2>
           <p className="text-lg leading-relaxed">
@@ -120,7 +120,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-2"
         >
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900cd">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900">
             Living Between Worlds
           </h2>
           <p className="text-lg leading-relaxed">
@@ -148,7 +148,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.2 }}
           className="order-2 md:order-1"
         >
-          <h2 className="text-2xl font-semibold mb-6 text-gray-900cd">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-900">
             Human-Centered Tech
           </h2>
           <p className="text-lg leading-relaxed">
