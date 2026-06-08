@@ -4,8 +4,33 @@ import Navbar from "./components/Navbar"; // adjust the path if needed
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rajinipreethajohn.netlify.app"),
   title: "Rajini Preetha John",
   description: "Data scientist | Artist | Culinary explorer | Mindful technologist",
+  openGraph: {
+    title: "Rajini Preetha John",
+    description:
+      "Data Science, Art, Culinary, and Mindful Technology by Rajini Preetha John.",
+    url: "https://rajinipreethajohn.netlify.app",
+    siteName: "Rajini Preetha John",
+    images: [
+      {
+        url: "/images/RPJ-card.jpg",
+        width: 1734,
+        height: 907,
+        alt: "Rajini Preetha John portfolio card for data science, art, culinary, and mindful technology",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rajini Preetha John",
+    description:
+      "Data Science, Art, Culinary, and Mindful Technology by Rajini Preetha John.",
+    images: ["/images/RPJ-card.jpg"],
+  },
 };
 
 export default function RootLayout({
