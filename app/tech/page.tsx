@@ -42,6 +42,18 @@ const caseStudies = [
       "Practical local-LLM tooling for real operational bottlenecks, especially useful for SMEs that care about cost and privacy.",
   },
   {
+    emoji: "📚",
+    title: "AI Tutoring Agents",
+    problem:
+      "Creating and grading level-appropriate math assessments for my own kids in an IB international school was difficult to sustain manually.",
+    solution:
+      "Built AI agents that generate weekly math tests tailored to each student's topic and grade level, then grade completed work automatically.",
+    outcome:
+      "Produced and scored a 28-question math review alongside ongoing weekly assessments, creating a clearer view of learning progress.",
+    demonstrates:
+      "Applied AI in structured, rules-based domains, with patterns that transfer to training, onboarding, and internal certification workflows.",
+  },
+  {
     emoji: "🎬",
     title: "Automated Video Reel Engine",
     problem:
@@ -52,18 +64,6 @@ const caseStudies = [
       "Turned video creation into a repeatable workflow: generate images, update config, preview, and render.",
     demonstrates:
       "The ability to convert creative manual work into structured automation for marketing, reporting, or asset-generation pipelines.",
-  },
-  {
-    emoji: "📚",
-    title: "AI Tutoring Agents",
-    problem:
-      "Creating and grading level-appropriate math assessments for two students at different stages was difficult to sustain manually.",
-    solution:
-      "Built AI agents that generate weekly math tests tailored to each student's topic and grade level, then grade completed work automatically.",
-    outcome:
-      "Produced and scored a 28-question math review alongside ongoing weekly assessments, creating a clearer view of learning progress.",
-    demonstrates:
-      "Applied AI in structured, rules-based domains, with patterns that transfer to training, onboarding, and internal certification workflows.",
   },
 ];
 
@@ -155,15 +155,16 @@ export default function TechPage() {
       </motion.header>
 
       <section className="mb-20" aria-labelledby="featured-products">
-        <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-yellow-700">
-              Public-facing work
-            </p>
-            <h2 id="featured-products" className="text-3xl font-bold text-gray-900">
-              🚀 Featured Products
-            </h2>
-          </div>
+        <div className="mb-8 max-w-3xl">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-yellow-700">
+            Public-facing work
+          </p>
+          <h2
+            id="featured-products"
+            className="mb-4 text-3xl font-bold text-gray-900"
+          >
+            🚀 Featured Products
+          </h2>
           <p className="max-w-2xl leading-relaxed text-gray-600">
             Clickable experiences that show product thinking, deployment,
             maintenance, and creative direction in public.
@@ -184,9 +185,12 @@ export default function TechPage() {
       <section aria-labelledby="case-studies">
         <div className="mb-8 max-w-3xl">
           <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-yellow-700">
-            Proof of thinking
+            Behind the Systems
           </p>
-          <h2 id="case-studies" className="mb-4 text-3xl font-bold text-gray-900">
+          <h2
+            id="case-studies"
+            className="mb-4 text-3xl font-bold text-gray-900"
+          >
             ⚙️ AI Systems & Case Studies
           </h2>
           <p className="leading-relaxed text-gray-600">
@@ -211,21 +215,29 @@ export default function TechPage() {
                 <span className="text-3xl" aria-hidden="true">
                   {study.emoji}
                 </span>
-                <h3 className="text-2xl font-bold text-gray-900">{study.title}</h3>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  {study.title}
+                </h3>
               </div>
 
               <div className="grid gap-5 md:grid-cols-2">
                 <div>
                   <h4 className="mb-2 font-semibold text-gray-900">Problem</h4>
-                  <p className="leading-relaxed text-gray-700">{study.problem}</p>
+                  <p className="leading-relaxed text-gray-700">
+                    {study.problem}
+                  </p>
                 </div>
                 <div>
                   <h4 className="mb-2 font-semibold text-gray-900">Solution</h4>
-                  <p className="leading-relaxed text-gray-700">{study.solution}</p>
+                  <p className="leading-relaxed text-gray-700">
+                    {study.solution}
+                  </p>
                 </div>
                 <div>
                   <h4 className="mb-2 font-semibold text-gray-900">Outcome</h4>
-                  <p className="leading-relaxed text-gray-700">{study.outcome}</p>
+                  <p className="leading-relaxed text-gray-700">
+                    {study.outcome}
+                  </p>
                 </div>
                 <div>
                   <h4 className="mb-2 font-semibold text-gray-900">
