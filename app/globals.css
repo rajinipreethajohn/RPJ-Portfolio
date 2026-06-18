@@ -80,13 +80,14 @@ body {
 
 .blogletters-quote {
   font-style: italic;
-  border-left: 3px solid #d3b898;
-  color: #6f5f4d;
+  border-left: 3px solid #a16207;
+  color: #854d0e;
   padding-left: 1.2rem;
   margin: 2rem 0;
   line-height: 1.8;
   font-size: 1.05rem;
   max-width: 650px;
+  letter-spacing: 0.02em;
 }
 
 .blogletters-quote strong {

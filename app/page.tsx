@@ -23,6 +23,9 @@ export default function About() {
           animate="visible"
           className="order-1 md:order-1"
         >
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-yellow-700">
+            Science × Creativity × Human Potential
+          </p>
           <h1 className="text-4xl font-bold mb-8 text-gray-900">
             My name is Rajini Preetha John
           </h1>

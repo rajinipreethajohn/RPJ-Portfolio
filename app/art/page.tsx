@@ -4,8 +4,8 @@ export default function ArtPage() {
   return (
     <main className="max-w-6xl mx-auto px-4 pt-14 pb-32 text-gray-700">
       <section className="max-w-3xl">
-        <p className="uppercase tracking-[0.18em] text-sm text-gray-600 mb-4">
-          Stillhaus
+        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-yellow-700">
+          Immersive Experiences
         </p>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
           Art as a quiet practice of seeing.

@@ -29,7 +29,10 @@ export default function ContactPage() {
 
   return (
     <main className="max-w-2xl mx-auto py-20 px-4 text-center">
-      <h1 className="text-3xl font-bold mb-4">Let’s Connect</h1>
+      <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-yellow-700">
+        Let’s Connect
+      </p>
+      <h1 className="text-3xl font-bold mb-4">Send a Message</h1>
       <p className="text-lg text-gray-700 mb-10">
         I’d love to hear from you! Drop a message and I’ll get back to you soon.
       </p>

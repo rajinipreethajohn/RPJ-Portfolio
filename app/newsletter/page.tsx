@@ -23,6 +23,14 @@ export default function NewsletterPage() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-16 text-center">
       {/* Page heading */}
+      <motion.p
+        className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-yellow-700"
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        Weekly Edition
+      </motion.p>
       <motion.h1
         className="text-4xl font-bold mb-12"
         initial={{ opacity: 0, y: 20 }}

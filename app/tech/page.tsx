@@ -142,7 +142,7 @@ export default function TechPage() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-yellow-700">
-          Science x Creativity x Human Potential
+          Science × Creativity × Human Potential
         </p>
         <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
           Portfolio
