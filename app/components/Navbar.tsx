@@ -43,7 +43,7 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-6 text-lg font-semibold">
           <li>
             <Link href="/tech" className="hover:text-yellow-600">
-              Projects
+              Portfolio
             </Link>
           </li>
           <li>
@@ -92,7 +92,7 @@ export default function Navbar() {
           >
             <ul className="flex flex-col items-center space-y-4 py-4 text-lg font-semibold">
               {[
-                { name: "Projects", path: "/tech" },
+                { name: "Portfolio", path: "/tech" },
                 { name: "BlogLetters", path: "/blogletters" },
                 { name: "Art", path: "/art" },
                 { name: "Newsletter", path: "/newsletter" },
